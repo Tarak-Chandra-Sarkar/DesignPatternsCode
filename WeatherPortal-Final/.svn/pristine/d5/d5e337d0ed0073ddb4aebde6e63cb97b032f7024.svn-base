@@ -1,0 +1,101 @@
+
+{
+  "response": 
+  {
+      "version":"0.1",
+      "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+      "features": 
+	  {
+          "conditions": 1
+      }
+  },
+  "current_observation": 
+  {
+      "image": 
+	  {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+	  },
+	  "display_location": 
+	  {
+		"full":"Appleton, WI",
+		"city":"Appleton",
+		"state":"WI",
+		"state_name":"Wisconsin",
+		"country":"US",
+		"country_iso3166":"US",
+		"zip":"54911",
+		"magic":"1",
+		"wmo":"99999",
+		"latitude":"44.29259872",
+		"longitude":"-88.37418365",
+		"elevation":"232.00000000"
+	  },
+	  "observation_location": 
+	  {
+		"full":"Northside, Appleton, Wisconsin",
+		"city":"Northside, Appleton",
+		"state":"Wisconsin",
+		"country":"US",
+		"country_iso3166":"US",
+		"latitude":"44.285175",
+		"longitude":"-88.385361",
+		"elevation":"787 ft"
+	  },
+	  "estimated": 
+	  {
+	  },
+	  "station_id":"KWIAPPLE33",
+	  "observation_time":"Last Updated on July 10, 6:33 PM CDT",
+		"observation_time_rfc822":"Sun, 10 Jul 2016 18:33:10 -0500",
+		"observation_epoch":"1468193590",
+		"local_time_rfc822":"Sun, 10 Jul 2016 18:33:22 -0500",
+		"local_epoch":"1468193602",
+		"local_tz_short":"CDT",
+		"local_tz_long":"America/Chicago",
+		"local_tz_offset":"-0500",
+		"weather":"Mostly Cloudy",
+		"temperature_string":"75.9 F (24.4 C)",
+		"temp_f":75.9,
+		"temp_c":24.4,
+		"relative_humidity":"63%",
+		"wind_string":"From the SSW at 2.9 MPH Gusting to 4.9 MPH",
+		"wind_dir":"SSW",
+		"wind_degrees":194,
+		"wind_mph":2.9,
+		"wind_gust_mph":"4.9",
+		"wind_kph":4.7,
+		"wind_gust_kph":"7.9",
+		"pressure_mb":"1014",
+		"pressure_in":"29.94",
+		"pressure_trend":"-",
+		"dewpoint_string":"62 F (17 C)",
+		"dewpoint_f":62,
+		"dewpoint_c":17,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"NA",
+		"windchill_f":"NA",
+		"windchill_c":"NA",
+		"feelslike_string":"75.9 F (24.4 C)",
+		"feelslike_f":"75.9",
+		"feelslike_c":"24.4",
+		"visibility_mi":"10.0",
+		"visibility_km":"16.1",
+		"solarradiation":"139",
+		"UV":"1.0","precip_1hr_string":"0.00 in ( 0 mm)",
+		"precip_1hr_in":"0.00",
+		"precip_1hr_metric":" 0",
+		"precip_today_string":"0.00 in (0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0",
+		"icon":"mostlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/US/WI/Appleton.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KWIAPPLE33",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=44.285175,-88.385361",
+		"nowcast":""
+	}
+}

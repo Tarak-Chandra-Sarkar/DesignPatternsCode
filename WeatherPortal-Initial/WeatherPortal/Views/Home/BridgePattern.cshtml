@@ -1,0 +1,46 @@
+﻿@model WeatherPortal.Models.BridgePatternModel
+
+@{
+    ViewBag.Title = "BridgePattern";
+}
+
+<div class="jumbotron">
+    <h1>Bridge Pattern Demonstration</h1>
+    <p class="lead">The controller action powering this page uses an interface to get its weather data, there by
+    eliminating the direct dependency on the original class.  This is an implementation of the bridge pattern.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6" style="padding: 5px">
+        <p>
+            This simple page is getting the weather for a location and displaying the results in a partial view.
+            By programming against the interface we have defined, it is now very easy to switch out to a new
+            implementation and to mock out dependencies for testing
+        </p>        
+    </div>
+
+    <div class="col-md-4 col-md-offset-2">
+        @Html.Partial("_WeatherWidgetBridgePattern", Model.WeatherData)
+        <p style="margin-top: 20px">
+        <p>
+            Get weather for zip code:
+        </p>
+        @using (Html.BeginForm("index"))
+            {
+            <p>
+                <input id="weatherZipCode" type="text" name="zipCode" />
+            </p>
+                <p>
+                    <input type="submit" class="btn btn-succes" value="Get Weather" />
+                </p>
+        }
+
+        </p>
+    </div>
+
+</div>
+
+
+

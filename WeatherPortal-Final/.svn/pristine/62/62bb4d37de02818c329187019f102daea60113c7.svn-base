@@ -1,0 +1,61 @@
+﻿@model WeatherApi.CurrentConditions
+
+@*
+    This version of the partial view is programmed against the CurrentConditions object that 
+    is returned by our bridge pattern interface.  We defined this object, so we avoid any
+    external dependencies by having our own definition
+*@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Weather for <strong>@Model.LocationName</strong>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <strong>Current Conditions</strong>
+            </div>
+            <div class="col-sm-6">
+                @Model.ConditionsDescription
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <strong>Temperature</strong>
+            </div>
+            <div class="col-sm-6">
+                @Model.Temperature&deg; F
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <strong>Humidity</strong>
+            </div>
+            <div class="col-sm-6">
+                @Model.Humidity %
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <strong>Wind</strong>
+            </div>
+            <div class="col-sm-6">
+                @Model.WindSpeed MPH from the @Model.WindDirection
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <strong>Source</strong>
+            </div>
+            <div class="col-sm-6">
+                @Model.Source
+            </div>
+        </div>
+
+    </div>
+</div>

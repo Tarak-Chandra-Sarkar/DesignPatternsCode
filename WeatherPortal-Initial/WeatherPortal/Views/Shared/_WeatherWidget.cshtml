@@ -1,0 +1,66 @@
+﻿@model WeatherUndergroundApi.CurrentConditionsResponse
+
+@*
+    This is the initial partial view to display weather information
+    Notice how it is programmed directly against the Wether Underground response
+    object.  Because of this, this view is now tightly coupled to the implementation
+    of our weather api call.  This view is meant to demonstrate how these kind of
+    dependencies can wind their way through your system, making it very difficult to
+    later change your system
+*@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Weather for <strong>@Model.current_observation.display_location.full</strong>
+    </div>
+
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-6">
+                <strong>Current Conditions</strong>
+            </div>
+            <div class="col-sm-6">
+                @Model.current_observation.weather
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <strong>Temperature</strong>
+            </div>
+            <div class="col-sm-6">
+                @Model.current_observation.temperature_string
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <strong>Humidity</strong>
+            </div>
+            <div class="col-sm-6">
+                @Model.current_observation.relative_humidity
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <strong>Wind</strong>
+            </div>
+            <div class="col-sm-6">
+                @Model.current_observation.wind_mph from the @Model.current_observation.wind_dir
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <strong>Source</strong>
+            </div>
+            <div class="col-sm-6">
+                Weather Underground (no interface)
+            </div>
+        </div>
+
+    </div>
+</div>
+

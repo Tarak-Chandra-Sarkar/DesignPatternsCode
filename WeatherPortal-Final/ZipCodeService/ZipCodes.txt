@@ -1,0 +1,3 @@
+#TYPE System.Object[]
+"Count","Length","LongLength","Rank","SyncRoot","IsReadOnly","IsFixedSize","IsSynchronized"
+"42522","42522","42522","1","System.Object[]","False","True","False"

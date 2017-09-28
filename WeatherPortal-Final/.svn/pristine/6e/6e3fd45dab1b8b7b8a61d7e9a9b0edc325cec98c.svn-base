@@ -1,0 +1,41 @@
+﻿@model WeatherPortal.Models.DependencyInjectionIndexModel
+
+<div class="jumbotron">
+    <h1>Dependency Injection Demonstration</h1>
+    <p class="lead">
+        The controller is using dependency injection to get the correct concrete implementation of the IWeatherClient
+        interface
+    </p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6" style="padding: 5px">
+        <p>
+            By using an IoC container, we can completely decouple our controller code from any dependencies.
+            Now we set up the actual implementation we want to use when we configure our IoC container at
+            application startup rather than by newing up the correct class in the action method.
+        </p>
+    </div>
+
+    <div class="col-md-4 col-md-offset-2">
+        @Html.Partial("_WeatherWidgetBridgePattern", Model.WeatherData)
+        <p style="margin-top: 20px">
+        <p>
+            Get weather for zip code:
+        </p>
+        @using (Html.BeginForm("index"))
+            {
+            <p>
+                <input id="weatherZipCode" type="text" name="zipCode" />
+            </p>
+            <p>
+                <input type="submit" class="btn btn-succes" value="Get Weather" />
+            </p>
+        }
+
+        </p>
+    </div>
+
+</div>
