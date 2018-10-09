@@ -23,7 +23,7 @@ namespace WeatherPortal.Controllers
         public ActionResult Index(String zipCode = null)
         {
             if (String.IsNullOrWhiteSpace(zipCode))
-                zipCode = "53211";
+                zipCode = "54481";
 
             CurrentConditions currentConditions = this.weatherClient.GetCurrentConditions(zipCode);
 

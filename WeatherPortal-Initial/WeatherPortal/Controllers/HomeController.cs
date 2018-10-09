@@ -14,7 +14,7 @@ namespace WeatherPortal.Controllers
         public ActionResult Index(String zipCode = null)
         {
             if (String.IsNullOrWhiteSpace(zipCode))
-                zipCode = "50309";
+                zipCode = "54481";
 
 
             WeatherUndergroundClient weatherClient = new WeatherUndergroundClient();

@@ -32,7 +32,7 @@ namespace WeatherPortal.Controllers
         public ActionResult Index(String zipCode = null)
         {
             if (String.IsNullOrWhiteSpace(zipCode))
-                zipCode = "53211";
+                zipCode = "55437";
 
 
             WeatherUndergroundClient weatherClient = new WeatherUndergroundClient();
@@ -56,12 +56,12 @@ namespace WeatherPortal.Controllers
         public ActionResult BridgePattern(String zipCode = null)
         {
             if (String.IsNullOrWhiteSpace(zipCode))
-                zipCode = "53211";
+                zipCode = "54481";
 
-            IWeatherClient weatherClient = new WeatherUndergroundDriver();
+            // IWeatherClient weatherClient = new WeatherUndergroundDriver();
 
             #region NOAA Weather Client
-            //IWeatherClient weatherClient = new NoaaWeatherAdapter.NoaaWeatherDriver(this.zipCodeService);
+            IWeatherClient weatherClient = new NoaaWeatherAdapter.NoaaWeatherDriver(this.zipCodeService);
             #endregion
 
             #region Fake Weather Service
